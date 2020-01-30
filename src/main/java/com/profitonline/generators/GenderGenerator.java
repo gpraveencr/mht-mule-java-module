@@ -10,6 +10,7 @@ public final class GenderGenerator {
 	private static Random random = new Random(System.currentTimeMillis());
 
 	public static String  generate() {
+		System.out.println("Request is in GenderGenerator.generate() method");
 		return random.nextBoolean() ? MALE : FEMALE;
 	}
 
